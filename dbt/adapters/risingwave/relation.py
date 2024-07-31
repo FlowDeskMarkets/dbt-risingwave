@@ -2,8 +2,8 @@ from dataclasses import dataclass
 from typing import Optional, Type
 
 from dbt.adapters.postgres import PostgresRelation
-from dbt.dataclass_schema import StrEnum
-from dbt.utils import classproperty
+from dbt_common.dataclass_schema import StrEnum
+from dbt.adapters.utils import classproperty
 
 
 class RisingWaveRelationType(StrEnum):

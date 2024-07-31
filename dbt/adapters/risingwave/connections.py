@@ -1,11 +1,11 @@
 from contextlib import contextmanager
 from dataclasses import dataclass
 import dbt.exceptions  # noqa
-from dbt.adapters.base import Credentials
+from dbt.adapters.contracts.connection import Credentials
 from dbt.adapters.postgres import PostgresConnectionManager, PostgresCredentials
-from dbt.helper_types import Port
+from dbt_common.helper_types import Port
 from dbt.adapters.sql import SQLConnectionManager as connection_cls
-from dbt.events import AdapterLogger
+from dbt.adapters.events.logging import AdapterLogger
 from typing import Dict, Optional
 import psycopg2
 

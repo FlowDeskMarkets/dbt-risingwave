@@ -3,7 +3,7 @@ import os
 from setuptools import find_namespace_packages, setup
 
 package_name = "dbt-risingwave"
-package_version = "1.8.0"
+package_version = "1.8.0-rc.2"
 description = """The RisingWave adapter plugin for dbt"""
 
 with open(os.path.join(os.path.dirname(__file__), "README.md")) as f:
